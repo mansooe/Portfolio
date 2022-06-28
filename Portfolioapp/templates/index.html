@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>DevFolio Bootstrap Template</title>
+    <title>manzoor</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -318,11 +318,18 @@
                               <button
                               type="submit"
                               class="button button-a button-big button-rouded"
-                              
+                              id="sendme"
+                              onclick="changeText()"
                             >
-                            
                               Send Message
                             </button>
+                            <script>
+                              function changeText(){
+                                document.getElementById('sendme').style.backgroundColor='black'
+                                document.getElementById('sendme').innerHTML='Sending Message......:)'
+                              }
+
+                            </script>
                             
               
                             </div>
@@ -335,28 +342,23 @@
                                 </div>
                                 
                                 <ul>
+
                                   <li>
-                                    <a href=""
-                                      ><span class="ico-circle"
-                                        ><i class="ion-social-facebook"></i></span
-                                    ></a>
-                                  </li>
-                                  <li>
-                                    <a href=""
+                                    <a href="https://www.instagram.com/the_manzoor/"
                                       ><span class="ico-circle"
                                         ><i class="ion-social-instagram"></i></span
                                     ></a>
                                   </li>
                                   <li>
-                                    <a href=""
+                                    <a href="https://twitter.com/the_Mansoor_?t=Bp6m0B1MJAAfKQ6yHgBiOA&s=09"
                                       ><span class="ico-circle"
                                         ><i class="ion-social-twitter"></i></span
                                     ></a>
                                   </li>
                                   <li>
-                                    <a href=""
+                                    <a href="https://www.linkedin.com/in/muahmmed-mansoor-7a0916230"
                                       ><span class="ico-circle"
-                                        ><i class="ion-social-pinterest"></i></span
+                                        ><i class="ion-social-linkedin"></i></span
                                     ></a>
                                   </li>
                                 </ul>
@@ -383,7 +385,7 @@
     <div id="preloader"></div>
 
     <!-- JavaScript Libraries -->
-    <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/jquery/jquery.min.js' %}"></>
     <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
     <script src="{% static 'lib/popper/popper.min.js' %}"></script>
     <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>

@@ -1,8 +1,10 @@
 
+from asyncio import sleep
 from asyncio.windows_events import NULL
 from email import message
 from importlib.resources import path
 from pyexpat.errors import messages
+import time
 import django
 from django.http import HttpResponse, HttpResponseRedirect
 
@@ -28,4 +30,5 @@ def MessegeData(request):
 
         messages.success(request,'Thanks for share your Message.i will replay back when i see :) ')
         
-    return HttpResponseRedirect('/thanks/')
+    time.sleep(5)      
+    return redirect(firstPage)

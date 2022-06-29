@@ -28,7 +28,7 @@ def MessegeData(request):
         m_data=MessegeDb(name=m_name,email=m_email,subject=m_subject,message=m_message)
         m_data.save()
 
-        messages.success(request,'Thanks for share your Message.i will replay back when i see :) ')
+        
         
     time.sleep(5)      
     return redirect(firstPage)
